@@ -1,3 +1,68 @@
 {
-  "extends": "@tsconfig/react-native/tsconfig.json"
+  "compilerOptions": { 
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "jsx": "react-native",
+    "lib": [
+      "ES6",
+      "ES2019"
+    ],
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true, 
+    "noEmit": true,
+    "strict": true,
+    "target": "esnext",
+    "skipLibCheck": true,
+    "module": "commonjs",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "typeRoots": [
+      "./@types",
+      "./node_modules/@types"
+    ],
+    "baseUrl": ".",
+    // "paths": {
+      // "@config/*": ["config/*"],
+      // "@keys/*": ["keys/*"],
+      // "@theme": ["src/presentation/theme"],
+      // "@helper/*": ["src/helper/*"],
+      // "@utils/*": ["src/presentation/utils/*"],
+      // "@components/*": ["src/presentation/components/*"],
+      // "@components": ["src/presentation/components"],
+      // "@screens/*": ["src/presentation/screens/*"],
+      // "@screens": ["src/presentation/screens"],
+      // "@navigation/*": ["src/presentation/navigation/*"],
+      // "@navigation": ["src/presentation/navigation"],
+      // "@assets/*": ["src/presentation/assets/*"],
+      // "@store/*": ["src/adapters/store/*"],
+      // "@store": ["src/adapters/store"],
+      // "@services/*": ["src/adapters/services/*"],
+      // "@entities/*": ["src/domain/entities/*"],
+      // "@use-cases/*": ["src/domain/use-cases/*"],
+      // "@infrastructure/*": ["src/infrastructure/*"],
+      // "@dynamic-render/*": ["src/presentation/dynamic-render/*"],
+      // "@dynamic-render": ["src/presentation/dynamic-render"],
+      
+      // "@app-v2/*": ["src/legacy_v2/*"],
+      // "@config-v2/*": ["src/legacy_v2/config/*"],
+      // "@helpers-v2/*": ["src/legacy_v2/store/helpers/*"],   
+      // "@screens-v2/*": ["src/legacy_v2/screens/*"],
+      // "@components-v2/*": ["src/legacy_v2/components/*"],
+      // "@actions-v2/*": ["src/legacy_v2/store/actions/*"],     
+      // "@services-v2/*": ["src/legacy_v2/services/*"]
+    // }
+  },
+  "include": [
+    "./**/*",
+    "./*",
+    ".eslintrc.json"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js" 
+  ]
 }
