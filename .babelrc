@@ -1,0 +1,35 @@
+{
+  "presets": [
+    "module:metro-react-native-babel-preset"
+  ],
+  "env": {
+    "production": {
+        "plugins": [
+            "transform-remove-console"
+        ]
+    }
+  },
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "extensions": [".js", ".ts", ".tsx"],
+        "alias": {
+          "@config": "./src/presentation/config",
+          "@keys": "./keys",
+          "@theme": "./src/presentation/theme",
+          "@helper": "./src/helper",
+          "@utils": "./src/presentation/utils",
+          "@assets": "./src/presentation/assets",
+          "@components": "./src/presentation/components",
+          "@screens": "./src/presentation/screens",
+          "@navigation": "./src/presentation/navigation",
+          "@store": "./src/adapters/store",
+        },
+        "cwd": "babelrc"     
+      }
+    ],
+    "react-native-reanimated/plugin"
+  ]
+}
